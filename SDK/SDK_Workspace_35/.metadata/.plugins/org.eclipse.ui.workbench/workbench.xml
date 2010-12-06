@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="20" version="2.0">
+<workbenchAdvisor/>
+<window height="771" maximized="true" width="1020" x="0" y="24">
+<fastViewData fastViewLocation="1024"/>
+<intro standby="true"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="138" y="30"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.xilinx.sdk.xbash.toolbar1" itemType="typeToolBarContribution" x="40" y="30"/>
+<coolItem id="com.xilinx.sdk.targetmanager.ui.toolbar1" itemType="typeToolBarContribution" x="68" y="30"/>
+<coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
+<coolItem id="org.eclipse.cdt.ui.buildConfigActionSet" itemType="typeToolBarContribution" x="82" y="30"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="120" y="30"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="96" y="30"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1291658381324" focus="true" label="Workspace - C/C++">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" partName="system.xml" path="/home/mohamed/workspace/codeplex/mb_pmbus/SDK/SDK_Workspace_35/hw_platform_0/system.xml" title="system.xml" tooltip="hw_platform_0/system.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hw_platform_0/system.xml"/>
+</editor>
+<editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="/home/mohamed/workspace/codeplex/mb_pmbus/SDK/SDK_Workspace_35/standalone_bsp_0/system.mss" title="system.mss" tooltip="standalone_bsp_0/system.mss" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/standalone_bsp_0/system.mss"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="mb_0.c" partName="mb_0.c" path="/home/mohamed/workspace/codeplex/mb_pmbus/SDK/SDK_Workspace_35/pmbus_driver/src/mb_0.c" title="mb_0.c" tooltip="pmbus_driver/src/mb_0.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/pmbus_driver/src/mb_0.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1734" selectionTopPixel="993"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pmbus.c" partName="pmbus.c" path="/home/mohamed/workspace/codeplex/mb_pmbus/SDK/SDK_Workspace_35/pmbus_driver/src/pmbus.c" title="pmbus.c" tooltip="pmbus_driver/src/pmbus.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/pmbus_driver/src/pmbus.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="78" selectionOffset="10240" selectionTopPixel="470"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="sysmon.c" partName="sysmon.c" path="/home/mohamed/workspace/codeplex/mb_pmbus/SDK/SDK_Workspace_35/pmbus_driver/src/sysmon.c" title="sysmon.c" tooltip="pmbus_driver/src/sysmon.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/pmbus_driver/src/sysmon.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4263" selectionTopPixel="1284"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="sysmon.h" partName="sysmon.h" path="/home/mohamed/workspace/codeplex/mb_pmbus/SDK/SDK_Workspace_35/pmbus_driver/include/sysmon.h" title="sysmon.h" tooltip="pmbus_driver/include/sysmon.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/pmbus_driver/include/sysmon.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1998" selectionTopPixel="247"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pmbus.h" partName="pmbus.h" path="/home/mohamed/workspace/codeplex/mb_pmbus/SDK/SDK_Workspace_35/pmbus_driver/include/pmbus.h" title="pmbus.h" tooltip="pmbus_driver/include/pmbus.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/pmbus_driver/include/pmbus.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7809" selectionTopPixel="3188"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" CommonNavigator.LINKING_ENABLED.delayed="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties"/>
+<view id="org.eclipse.cdt.make.ui.views.MakeView" partName="Make Targets"/>
+<view id="org.eclipse.tm.terminal.view.TerminalView" partName="Terminal"/>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>&#x0A;<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="108" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.internal.introview" partName="Welcome">
+<viewState>
+<presentation currentPage="file:///home/mohamed/tools/xilinx/12.3/ISE_DS/EDK/eclipse/lin64/eclipse/plugins/com.xilinx.sdk.product_1.0.0/intro/index.html" restore="true"/>
+<standbyPart/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="org.eclipse.ui.internal.introview" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.SearchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.CElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.make.ui.makeTargetActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.buildConfigActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.NavigationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.OpenActionSet"/>
+<alwaysOnActionSet id="org.eclipse.cdt.ui.CodingActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.presentation"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.cdt.ui.CView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.tm.terminal.view.TerminalView"/>
+<show_view_action id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.cdt.ui.includeBrowser"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewSourceFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewHeaderFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.cdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="com.xilinx.sdk.appwiz.CAppWizard"/>
+<new_wizard_action id="com.xilinx.sdk.appwiz.CCAppWizard"/>
+<new_wizard_action id="com.xilinx.sdk.hw.newHwWizard"/>
+<new_wizard_action id="com.xilinx.sdk.sw.ui.NewBspWizard"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.team.ui.TeamSynchronizingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.tm.terminal.view.TerminalView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.cdt.make.ui.views.MakeView"/>
+<view id="org.eclipse.ui.internal.introview"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<page content="org.eclipse.cdt.ui.CView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@20b124fa" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">
+<folder activePageID="org.eclipse.ui.internal.introview" appearance="2" expanded="2">
+<page content="org.eclipse.ui.internal.introview" label="Welcome"/>
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.5421965" ratioLeft="469" ratioRight="396" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.tm.terminal.view.TerminalView" label="Terminal"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="topRight" ratio="0.74934036" ratioLeft="568" ratioRight="190" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Targets"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/hw_platform_0/system.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/standalone_bsp_0/system.mss"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/pmbus_driver/src/README.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/pmbus_driver/src/mb_0.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/pmbus_driver/src/pmbus.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/pmbus_driver/src/sysmon.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/pmbus_driver/src/util.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/pmbus_driver/include/sysmon.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/pmbus_driver/include/pmbus.h"/>
+</editors>
+<item historyLabel="system.xml" index="0"/>
+<item historyLabel="system.mss" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="README.txt" index="2">
+<position info="not_deleted" x="41" y="0"/>
+</item>
+<item historyLabel="system.mss" index="1"/>
+<item historyLabel="mb_0.c" index="3">
+<position info="not_deleted" x="1810" y="0"/>
+</item>
+<item historyLabel="pmbus.c" index="4">
+<position info="not_deleted" x="667" y="0"/>
+</item>
+<item historyLabel="sysmon.c" index="5">
+<position info="not_deleted" x="66" y="0"/>
+</item>
+<item historyLabel="util.c" index="6">
+<position info="not_deleted" x="493" y="0"/>
+</item>
+<item historyLabel="sysmon.c" index="5">
+<position info="not_deleted" x="17" y="0"/>
+</item>
+<item historyLabel="pmbus.c" index="4">
+<position info="not_deleted" x="514" y="0"/>
+</item>
+<item historyLabel="sysmon.c" index="5">
+<position info="not_deleted" x="17" y="0"/>
+</item>
+<item historyLabel="mb_0.c" index="3">
+<position info="not_deleted" x="1068" y="0"/>
+</item>
+<item historyLabel="pmbus.c" index="4">
+<position info="not_deleted" x="514" y="0"/>
+</item>
+<item historyLabel="sysmon.c" index="5">
+<position info="not_deleted" x="131" y="19"/>
+</item>
+<item historyLabel="mb_0.c" index="3">
+<position info="not_deleted" x="1066" y="0"/>
+</item>
+<item historyLabel="sysmon.c" index="5">
+<position info="not_deleted" x="131" y="19"/>
+</item>
+<item historyLabel="mb_0.c" index="3">
+<position info="not_deleted" x="1045" y="0"/>
+</item>
+<item historyLabel="sysmon.c" index="5">
+<position info="not_deleted" x="131" y="19"/>
+</item>
+<item historyLabel="mb_0.c" index="3">
+<position info="not_deleted" x="1066" y="0"/>
+</item>
+<item historyLabel="sysmon.c" index="5">
+<position info="not_deleted" x="131" y="19"/>
+</item>
+<item historyLabel="mb_0.c" index="3">
+<position info="not_deleted" x="1066" y="0"/>
+</item>
+<item historyLabel="mb_0.c" index="3">
+<position info="not_deleted" x="1068" y="0"/>
+</item>
+<item historyLabel="sysmon.c" index="5">
+<position info="not_deleted" x="2193" y="16"/>
+</item>
+<item historyLabel="sysmon.h" index="7">
+<position info="not_deleted" x="1998" y="0"/>
+</item>
+<item historyLabel="pmbus.c" index="4">
+<position info="not_deleted" x="514" y="0"/>
+</item>
+<item historyLabel="pmbus.h" index="8">
+<position info="not_deleted" x="8049" y="0"/>
+</item>
+<item historyLabel="sysmon.h" index="7">
+<position info="not_deleted" x="1998" y="0"/>
+</item>
+<item historyLabel="sysmon.c" index="5">
+<position info="not_deleted" x="2189" y="27"/>
+</item>
+<item historyLabel="sysmon.h" index="7">
+<position info="not_deleted" x="1998" y="0"/>
+</item>
+<item historyLabel="sysmon.c" index="5">
+<position info="not_deleted" x="2169" y="19"/>
+</item>
+<item historyLabel="pmbus.h" index="8">
+<position info="not_deleted" x="7875" y="0"/>
+</item>
+<item historyLabel="sysmon.h" index="7">
+<position info="not_deleted" x="1998" y="0"/>
+</item>
+<item historyLabel="sysmon.c" index="5">
+<position info="not_deleted" x="2169" y="19"/>
+</item>
+<item historyLabel="pmbus.c" index="4">
+<position info="not_deleted" x="2019" y="31"/>
+</item>
+<item historyLabel="pmbus.h" index="8">
+<position info="not_deleted" x="7873" y="0"/>
+</item>
+<item historyLabel="pmbus.c" index="4">
+<position info="not_deleted" x="10240" y="78"/>
+</item>
+<item historyLabel="pmbus.h" index="8">
+<position info="not_deleted" x="7809" y="0"/>
+</item>
+<item historyLabel="pmbus.c" index="4">
+<position info="not_deleted" x="10240" y="78"/>
+</item>
+<item historyLabel="mb_0.c" index="3">
+<position info="not_deleted" x="1068" y="0"/>
+</item>
+<item historyLabel="mb_0.c" index="3">
+<position info="not_deleted" x="990" y="32"/>
+</item>
+<item historyLabel="sysmon.c" index="5">
+<position info="not_deleted" x="4263" y="0"/>
+</item>
+<item historyLabel="mb_0.c" index="3">
+<position info="not_deleted" x="177" y="17"/>
+</item>
+<item historyLabel="pmbus.c" index="4">
+<position info="not_deleted" x="10240" y="78"/>
+</item>
+<item active="true" historyLabel="mb_0.c" index="3">
+<position info="not_deleted" x="177" y="17"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pmbus.h" tooltip="pmbus_driver/include/pmbus.h">
+<persistable path="/pmbus_driver/include/pmbus.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="sysmon.h" tooltip="pmbus_driver/include/sysmon.h">
+<persistable path="/pmbus_driver/include/sysmon.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="util.c" tooltip="pmbus_driver/src/util.c">
+<persistable path="/pmbus_driver/src/util.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="sysmon.c" tooltip="pmbus_driver/src/sysmon.c">
+<persistable path="/pmbus_driver/src/sysmon.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pmbus.c" tooltip="pmbus_driver/src/pmbus.c">
+<persistable path="/pmbus_driver/src/pmbus.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mb_0.c" tooltip="pmbus_driver/src/mb_0.c">
+<persistable path="/pmbus_driver/src/mb_0.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="README.txt" tooltip="pmbus_driver/src/README.txt">
+<persistable path="/pmbus_driver/src/README.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" tooltip="standalone_bsp_0/system.mss">
+<persistable path="/standalone_bsp_0/system.mss"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.xml" tooltip="hw_platform_0/system.xml">
+<persistable path="/hw_platform_0/system.xml"/>
+</file>
+</mruList>
+</workbench>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="CleanDialogSettings">
+		<item value="565" key="DIALOG_WIDTH"/>
+		<item value="false" key="BUILD_NOW"/>
+		<item value="true" key="BUILD_ALL"/>
+		<item value="257" key="DIALOG_Y_ORIGIN"/>
+		<item value="559" key="DIALOG_X_ORIGIN"/>
+		<item value="489" key="DIALOG_HEIGHT"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+	</section>
+</section>

@@ -1,0 +1,60 @@
+// BMM LOC annotation file.
+//
+// Release 12.3 - Data2MEM M.70d, build 1.9 Aug 19, 2010
+// Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Processor 'mb_0', ID 100, memory map.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+ADDRESS_MAP mb_0 MICROBLAZE 100
+
+
+    ///////////////////////////////////////////////////////////////////////////////
+    //
+    // Processor 'mb_0' address space 'lmb_bram_0_combined' 0x00000000:0x0001FFFF (128 KBytes).
+    //
+    ///////////////////////////////////////////////////////////////////////////////
+
+    ADDRESS_SPACE lmb_bram_0_combined RAMB32 [0x00000000:0x0001FFFF]
+        BUS_BLOCK
+            lmb_bram_0/lmb_bram_0/ramb36e1_0 [31:31] INPUT = lmb_bram_0_combined_0.mem PLACED = X2Y24;
+            lmb_bram_0/lmb_bram_0/ramb36e1_1 [30:30] INPUT = lmb_bram_0_combined_1.mem PLACED = X1Y22;
+            lmb_bram_0/lmb_bram_0/ramb36e1_2 [29:29] INPUT = lmb_bram_0_combined_2.mem PLACED = X0Y24;
+            lmb_bram_0/lmb_bram_0/ramb36e1_3 [28:28] INPUT = lmb_bram_0_combined_3.mem PLACED = X1Y20;
+            lmb_bram_0/lmb_bram_0/ramb36e1_4 [27:27] INPUT = lmb_bram_0_combined_4.mem PLACED = X0Y25;
+            lmb_bram_0/lmb_bram_0/ramb36e1_5 [26:26] INPUT = lmb_bram_0_combined_5.mem PLACED = X0Y23;
+            lmb_bram_0/lmb_bram_0/ramb36e1_6 [25:25] INPUT = lmb_bram_0_combined_6.mem PLACED = X0Y22;
+            lmb_bram_0/lmb_bram_0/ramb36e1_7 [24:24] INPUT = lmb_bram_0_combined_7.mem PLACED = X1Y26;
+            lmb_bram_0/lmb_bram_0/ramb36e1_8 [23:23] INPUT = lmb_bram_0_combined_8.mem PLACED = X1Y21;
+            lmb_bram_0/lmb_bram_0/ramb36e1_9 [22:22] INPUT = lmb_bram_0_combined_9.mem PLACED = X1Y25;
+            lmb_bram_0/lmb_bram_0/ramb36e1_10 [21:21] INPUT = lmb_bram_0_combined_10.mem PLACED = X1Y19;
+            lmb_bram_0/lmb_bram_0/ramb36e1_11 [20:20] INPUT = lmb_bram_0_combined_11.mem PLACED = X2Y21;
+            lmb_bram_0/lmb_bram_0/ramb36e1_12 [19:19] INPUT = lmb_bram_0_combined_12.mem PLACED = X1Y24;
+            lmb_bram_0/lmb_bram_0/ramb36e1_13 [18:18] INPUT = lmb_bram_0_combined_13.mem PLACED = X2Y20;
+            lmb_bram_0/lmb_bram_0/ramb36e1_14 [17:17] INPUT = lmb_bram_0_combined_14.mem PLACED = X1Y27;
+            lmb_bram_0/lmb_bram_0/ramb36e1_15 [16:16] INPUT = lmb_bram_0_combined_15.mem PLACED = X1Y18;
+            lmb_bram_0/lmb_bram_0/ramb36e1_16 [15:15] INPUT = lmb_bram_0_combined_16.mem PLACED = X3Y22;
+            lmb_bram_0/lmb_bram_0/ramb36e1_17 [14:14] INPUT = lmb_bram_0_combined_17.mem PLACED = X2Y19;
+            lmb_bram_0/lmb_bram_0/ramb36e1_18 [13:13] INPUT = lmb_bram_0_combined_18.mem PLACED = X1Y23;
+            lmb_bram_0/lmb_bram_0/ramb36e1_19 [12:12] INPUT = lmb_bram_0_combined_19.mem PLACED = X2Y22;
+            lmb_bram_0/lmb_bram_0/ramb36e1_20 [11:11] INPUT = lmb_bram_0_combined_20.mem PLACED = X3Y24;
+            lmb_bram_0/lmb_bram_0/ramb36e1_21 [10:10] INPUT = lmb_bram_0_combined_21.mem PLACED = X3Y25;
+            lmb_bram_0/lmb_bram_0/ramb36e1_22 [9:9] INPUT = lmb_bram_0_combined_22.mem PLACED = X3Y27;
+            lmb_bram_0/lmb_bram_0/ramb36e1_23 [8:8] INPUT = lmb_bram_0_combined_23.mem PLACED = X3Y20;
+            lmb_bram_0/lmb_bram_0/ramb36e1_24 [7:7] INPUT = lmb_bram_0_combined_24.mem PLACED = X3Y19;
+            lmb_bram_0/lmb_bram_0/ramb36e1_25 [6:6] INPUT = lmb_bram_0_combined_25.mem PLACED = X3Y21;
+            lmb_bram_0/lmb_bram_0/ramb36e1_26 [5:5] INPUT = lmb_bram_0_combined_26.mem PLACED = X2Y26;
+            lmb_bram_0/lmb_bram_0/ramb36e1_27 [4:4] INPUT = lmb_bram_0_combined_27.mem PLACED = X2Y25;
+            lmb_bram_0/lmb_bram_0/ramb36e1_28 [3:3] INPUT = lmb_bram_0_combined_28.mem PLACED = X2Y23;
+            lmb_bram_0/lmb_bram_0/ramb36e1_29 [2:2] INPUT = lmb_bram_0_combined_29.mem PLACED = X2Y27;
+            lmb_bram_0/lmb_bram_0/ramb36e1_30 [1:1] INPUT = lmb_bram_0_combined_30.mem PLACED = X3Y26;
+            lmb_bram_0/lmb_bram_0/ramb36e1_31 [0:0] INPUT = lmb_bram_0_combined_31.mem PLACED = X3Y23;
+        END_BUS_BLOCK;
+    END_ADDRESS_SPACE;
+
+END_ADDRESS_MAP;
+

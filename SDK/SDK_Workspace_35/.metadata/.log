@@ -1,0 +1,69 @@
+!SESSION 2010-12-06 18:59:30.411 -----------------------------------------------
+eclipse.buildId=Release 12.3 Build SDK_MS3.70d
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/mohamed/workspace/codeplex/mb_pmbus/SDK/SDK_Workspace_35/
+
+!ENTRY org.eclipse.cdt.core 1 0 2010-12-06 19:00:04.417
+!MESSAGE Indexed 'standalone_bsp_0' (0 sources, 7 headers) in 0.24 sec: 0 declarations; 0 references; 7 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2010-12-06 19:00:44.062
+!MESSAGE Indexed 'pmbus_driver' (0 sources, 20 headers) in 0.20 sec: 122 declarations; 214 references; 3 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2010-12-06 19:37:22.324 -----------------------------------------------
+eclipse.buildId=Release 12.3 Build SDK_MS3.70d
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/mohamed/workspace/codeplex/mb_pmbus/SDK/SDK_Workspace_35/
+
+!ENTRY org.eclipse.ui 4 0 2010-12-06 19:40:06.253
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at com.xilinx.sdk.tools.internal.ui.LinkgenPresenter.checkValidLdScriptPath(Unknown Source)
+	at com.xilinx.sdk.tools.internal.ui.LinkgenPresenter.access$7(Unknown Source)
+	at com.xilinx.sdk.tools.internal.ui.LinkgenPresenter$3.widgetSelected(Unknown Source)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:228)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1176)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3493)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3112)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at com.xilinx.sdk.tools.internal.ui.LinkgenPresenter.open(Unknown Source)
+	at com.xilinx.sdk.tools.handlers.LinkGenHandler.displayLinkgenDialog(Unknown Source)
+	at com.xilinx.sdk.tools.handlers.LinkGenHandler.execute(Unknown Source)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:476)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.handlers.SlaveHandlerService.executeCommand(SlaveHandlerService.java:241)
+	at org.eclipse.ui.menus.CommandContributionItem.handleWidgetSelection(CommandContributionItem.java:770)
+	at org.eclipse.ui.menus.CommandContributionItem.access$10(CommandContributionItem.java:756)
+	at org.eclipse.ui.menus.CommandContributionItem$5.handleEvent(CommandContributionItem.java:746)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1176)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3493)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3112)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1287)

@@ -1,0 +1,23 @@
+# Clock and reset
+NET  sys_clk_in_p            LOC = J9  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE;
+NET  sys_clk_in_n            LOC = H9  | IOSTANDARD = LVDS_25 | DIFF_TERM = TRUE;
+
+Net sys_rst_pin PULLUP;
+Net sys_rst_pin LOC= H10 | IOSTANDARD=SSTL15;
+
+# Timing Constraints
+Net dcm_clk_s TNM_NET = dcm_clk_s;
+TIMESPEC TS_dcm_clk_s = PERIOD dcm_clk_s 5000 ps;
+Net sys_rst_pin TIG;
+
+# UART
+Net fpga_0_RS232_Uart_1_sin_pin LOC=J24 | IOSTANDARD=LVCMOS25;
+Net fpga_0_RS232_Uart_1_sout_pin LOC=J25 | IOSTANDARD=LVCMOS25;
+
+# PMBUS IIC interface
+Net PMBUS_iic_Sda LOC=AB10;
+Net PMBUS_iic_Sda SLEW = SLOW;
+Net PMBUS_iic_Sda DRIVE = 6;
+Net PMBUS_iic_Scl LOC=AC10;
+Net PMBUS_iic_Scl SLEW = SLOW;
+Net PMBUS_iic_Scl DRIVE = 6;

@@ -1,0 +1,184 @@
+
+ PARAMETER VERSION = 2.1.0
+
+
+# ##########################
+# System Interfaces
+# ##########################
+# UART
+ PORT fpga_0_RS232_Uart_1_sin_pin = fpga_0_RS232_Uart_1_sin, DIR = I
+ PORT fpga_0_RS232_Uart_1_sout_pin = fpga_0_RS232_Uart_1_sout, DIR = O
+# Clocks and Reset
+ PORT sys_clk_in_p = dcm_clk_s, DIR = I, DIFFERENTIAL_POLARITY = P, CLK_FREQ = 200000000, SIGIS = CLK
+ PORT sys_clk_in_n = dcm_clk_s, DIR = I, DIFFERENTIAL_POLARITY = N, CLK_FREQ = 200000000, SIGIS = CLK
+ PORT sys_rst_pin = sys_rst_s, DIR = I, RST_POLARITY = 1, SIGIS = RST
+# PMBus I2C
+ PORT PMBUS_iic_Sda = PMBUS_iic_Sda, DIR = IO
+ PORT PMBUS_iic_Scl = PMBUS_iic_Scl, DIR = IO
+# SysMon
+ PORT xps_sysmon_adc_0_VAUXP_pin = xps_sysmon_adc_0_VAUXP, DIR = I, VEC = [13:12]
+ PORT xps_sysmon_adc_0_VAUXN_pin = xps_sysmon_adc_0_VAUXN, DIR = I, VEC = [13:12]
+
+
+# ###########################
+# IP Cores
+# ###########################
+BEGIN microblaze
+ PARAMETER HW_VER = 8.00.a
+ PARAMETER INSTANCE = mb_0
+ PARAMETER C_USE_BARREL = 0
+ PARAMETER C_USE_FPU = 1
+ PARAMETER C_USE_DIV = 1
+ PARAMETER C_DEBUG_ENABLED = 1
+ PARAMETER C_NUMBER_OF_PC_BRK = 1
+ PARAMETER C_NUMBER_OF_RD_ADDR_BRK = 0
+ PARAMETER C_NUMBER_OF_WR_ADDR_BRK = 0
+ BUS_INTERFACE DPLB = mb_0_plb
+ BUS_INTERFACE IPLB = mb_0_plb
+ BUS_INTERFACE DLMB = dlmb_0
+ BUS_INTERFACE ILMB = ilmb_0
+ BUS_INTERFACE DEBUG = mb_0_MBDEBUG
+ PORT MB_RESET = mb_reset
+ PORT CLK = sys_clk_s
+ PORT INTERRUPT = mb_0_intc_Irq
+END
+
+BEGIN lmb_v10
+ PARAMETER INSTANCE = ilmb_0
+ PARAMETER HW_VER = 1.00.a
+ PORT LMB_Clk = sys_clk_s
+ PORT SYS_Rst = sys_bus_reset
+END
+
+BEGIN lmb_v10
+ PARAMETER INSTANCE = dlmb_0
+ PARAMETER HW_VER = 1.00.a
+ PORT LMB_Clk = sys_clk_s
+ PORT SYS_Rst = sys_bus_reset
+END
+
+BEGIN lmb_bram_if_cntlr
+ PARAMETER INSTANCE = LocalMemory_Cntlr_D_0
+ PARAMETER HW_VER = 2.10.b
+ PARAMETER C_BASEADDR = 0x00000000
+ PARAMETER C_HIGHADDR = 0x0001ffff
+ BUS_INTERFACE SLMB = dlmb_0
+ BUS_INTERFACE BRAM_PORT = dlmb_port_0
+END
+
+BEGIN lmb_bram_if_cntlr
+ PARAMETER INSTANCE = LocalMemory_Cntlr_I_0
+ PARAMETER HW_VER = 2.10.b
+ PARAMETER C_BASEADDR = 0x00000000
+ PARAMETER C_HIGHADDR = 0x0001ffff
+ BUS_INTERFACE SLMB = ilmb_0
+ BUS_INTERFACE BRAM_PORT = ilmb_port_0
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = lmb_bram_0
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = ilmb_port_0
+ BUS_INTERFACE PORTB = dlmb_port_0
+END
+
+BEGIN plb_v46
+ PARAMETER INSTANCE = mb_0_plb
+ PARAMETER HW_VER = 1.05.a
+ PORT PLB_Clk = sys_clk_s
+ PORT SYS_Rst = sys_bus_reset
+END
+
+BEGIN xps_sysmon_adc
+ PARAMETER INSTANCE = System_Monitor
+ PARAMETER HW_VER = 2.00.a
+ PARAMETER C_INCLUDE_INTR = 1
+ PARAMETER C_BASEADDR = 0x40000000
+ PARAMETER C_HIGHADDR = 0x4000ffff
+ BUS_INTERFACE SPLB = mb_0_plb
+ PORT VAUXP = 0b00&xps_sysmon_adc_0_VAUXP&0b000000000000
+ PORT VAUXN = 0b00&xps_sysmon_adc_0_VAUXN&0b000000000000
+END
+
+BEGIN xps_iic
+ PARAMETER INSTANCE = PMBUS_iic
+ PARAMETER HW_VER = 2.03.a
+ PARAMETER C_IIC_FREQ = 100000
+ PARAMETER C_TEN_BIT_ADR = 0
+ PARAMETER C_SCL_INERTIAL_DELAY = 5
+ PARAMETER C_SDA_INERTIAL_DELAY = 5
+ PARAMETER C_BASEADDR = 0x30000000
+ PARAMETER C_HIGHADDR = 0x3000ffff
+ BUS_INTERFACE SPLB = mb_0_plb
+ PORT Sda = PMBUS_iic_Sda
+ PORT Scl = PMBUS_iic_Scl
+END
+
+BEGIN xps_uartlite
+ PARAMETER INSTANCE = uart
+ PARAMETER HW_VER = 1.01.a
+ PARAMETER C_BAUDRATE = 115200
+ PARAMETER C_USE_PARITY = 0
+ PARAMETER C_BASEADDR = 0x10000000
+ PARAMETER C_HIGHADDR = 0x100003ff
+ BUS_INTERFACE SPLB = mb_0_plb
+ PORT RX = fpga_0_RS232_Uart_1_sin
+ PORT TX = fpga_0_RS232_Uart_1_sout
+END
+
+BEGIN clock_generator
+ PARAMETER INSTANCE = main_clk
+ PARAMETER HW_VER = 4.00.a
+ PARAMETER C_CLKIN_FREQ = 200000000
+ PARAMETER C_CLKOUT0_FREQ = 100000000
+ PARAMETER C_CLKOUT0_GROUP = MMCM0
+ PORT CLKIN = dcm_clk_s
+ PORT CLKOUT0 = sys_clk_s
+ PORT RST = sys_rst_s
+ PORT LOCKED = main_clk_locked
+END
+
+BEGIN xps_intc
+ PARAMETER INSTANCE = mb_0_intc
+ PARAMETER HW_VER = 2.01.a
+ PARAMETER C_IRQ_IS_LEVEL = 0
+ PARAMETER C_BASEADDR = 0x50000000
+ PARAMETER C_HIGHADDR = 0x500003ff
+ BUS_INTERFACE SPLB = mb_0_plb
+ PORT Irq = mb_0_intc_Irq
+ PORT Intr = mb_0_timer_Interrupt
+END
+
+BEGIN xps_timer
+ PARAMETER INSTANCE = mb_0_timer
+ PARAMETER HW_VER = 1.02.a
+ PARAMETER C_ONE_TIMER_ONLY = 1
+ PARAMETER C_BASEADDR = 0x60000000
+ PARAMETER C_HIGHADDR = 0x600003ff
+ BUS_INTERFACE SPLB = mb_0_plb
+ PORT Interrupt = mb_0_timer_Interrupt
+END
+
+BEGIN proc_sys_reset
+ PARAMETER INSTANCE = proc_sys_reset_0
+ PARAMETER HW_VER = 3.00.a
+ PARAMETER C_EXT_RESET_HIGH = 1
+ PARAMETER C_NUM_PERP_RST = 1
+ PORT Slowest_sync_clk = sys_clk_s
+ PORT Ext_Reset_In = sys_rst_s
+ PORT MB_Reset = mb_reset
+ PORT Bus_Struct_Reset = sys_bus_reset
+ PORT Dcm_locked = main_clk_locked
+ PORT Peripheral_Reset = sys_periph_reset
+ PORT MB_Debug_Sys_Rst = mdm_0_Debug_SYS_Reset
+END
+
+BEGIN mdm
+ PARAMETER INSTANCE = mdm_0
+ PARAMETER HW_VER = 2.00.a
+ PARAMETER C_USE_UART = 0
+ PARAMETER C_MB_DBG_PORTS = 1
+ BUS_INTERFACE MBDEBUG_0 = mb_0_MBDEBUG
+ PORT Debug_SYS_Rst = mdm_0_Debug_SYS_Reset
+END
+
